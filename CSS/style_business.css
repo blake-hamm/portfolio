@@ -1,0 +1,164 @@
+@charset "utf-8";
+.business_body {
+	min-height: 100vh;
+	margin-bottom: -40px;
+	width: 100%;
+	margin-left: 0px;
+	padding: 0px;
+	margin-right: 0px;
+}
+.business_push {
+	margin: 0px;
+	height: 40px;
+}
+.business_foot {
+	height: 40px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #000000;
+}
+#header_wrap {
+	width: 100%;
+	display: flex;
+	position: fixed;
+	background-color: #D8D8D8;
+	top: 0px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	justify-content: space-between;
+	align-content: center;
+	height: 15vh;
+	z-index: 100;
+}
+#header_left_wrap {
+	display: flex;
+	height: 100%;
+	width: auto;
+}
+
+
+#header_logo_wrap {
+	height: 100%;
+	align-items: center;
+	position: relative;
+	align-self: center;
+	flex-direction: column;
+}
+
+#header_logo_img {
+	padding: 5%;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	height: auto;
+	width: auto;
+	max-height: 100%;
+	max-width: 100%;
+	align-self: center;
+
+}
+#header_logo_wrap:hover #header_logo_img {
+	padding: 3%;
+	opacity: 0.2;
+
+}
+#header_logo_txt_wrap {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#header_logo_txt {
+	text-align: center;
+	opacity: 0;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	padding-right: 2%;
+	padding-left: 2%;
+	width: 100%;
+	margin: 0px;
+	position: absolute;
+}
+#header_logo_wrap:hover #header_logo_txt{
+	opacity: 1;
+	color: #000000;
+}
+
+
+#header_social_wrap {
+	display: flex;
+	justify-content: space-around;
+	width: auto;
+	padding: 3%;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+}
+.social_color {
+	color: #000000;
+}
+.social_color:hover {
+	color: #696969;
+}
+
+#header_button_wrap {
+	display: flex;
+	justify-content: center;
+	padding: 0px;
+	margin: 0px;
+	align-items: center;
+	align-self: center;
+}
+.header_button_style {
+	padding: 5px;
+	margin: 0px;
+	height: auto;
+	border-right-width: thin;
+	border-right-style: solid;
+}
+.header_button_style:last-child {
+	border: none;
+
+}
+.header_button_active {
+	color: #696969;
+}
+
+#header_contact_wrap {
+	display: flex;
+	height: auto;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-bottom: 2%;
+	align-content: center;
+	padding-top: 2%;
+}
+#header_contact_link {
+	align-self: center;
+}
+#header_contact_h {
+	align-self: center;
+
+}
+.background_img{
+	background-image: url(../web_images/business_background.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center 10vh;
+	}
+#main_body {
+	margin-top: 30vh;
+	padding: 5vh;
+	margin-bottom: 10vh;
+	border-radius: 5px;
+	background-color: hsla(0,0%,100%,0.70);
+
+}

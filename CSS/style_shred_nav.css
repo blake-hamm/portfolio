@@ -6,6 +6,7 @@
 	min-height: 100vh;
 	margin-top: 0px;
 }
+
 #header_wrap {
 	width: 100%;
 	display: flex;
@@ -16,7 +17,7 @@
 	border-bottom-right-radius: 5px;
 	justify-content: space-between;
 	align-content: center;
-	height: 20vh;
+	height: 15vh;
 	z-index: 100;
 }
 #header_left_wrap {
@@ -124,6 +125,10 @@
 .header_button_active {
 	color: #696969;
 }
+.header_button_txt {
+	font-size: 3vw;
+}
+
 
 #header_contact_wrap {
 	display: flex;
@@ -320,4 +325,7 @@
 	padding-bottom: 1%;
 
 
+}
+.black_link {
+	color: #000000;
 }

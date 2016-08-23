@@ -28,14 +28,13 @@
 
 }
 #home_logo_img {
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10%;
 
 }
 #home_logo_txt2 {
-	font-size: 12px;
+	font-size: 1.5vw;
 	opacity: 1;
 }
 
@@ -46,9 +45,41 @@
 	margin: 0;
 	width: 80%;
 }
-#home_skills {
-	margin: 0;
+#home_iam {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 }
+.home_skills_divs {
+	width: 50%;
+	display: flex;
+	padding: 0px;
+	margin: 0px;
+	justify-content: flex-end;
+}
+.home_skills_divs_ {
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.home_skills {
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	font-size: 2vw;
+	font-style: italic;
+}
+#home_skill_ {
+	text-decoration: underline;
+}
+
 #home_portfolio_selection_wrap {
 	border-radius: 15px;
 	background-color: #CCCCCC;
@@ -59,7 +90,7 @@
 }
 
 #home_portfolio_title {
-	font-size: 40px;
+	font-size: 4vw;
 	margin-top: 0;
 	margin-right: 0;
 	margin-left: 0;
@@ -93,7 +124,7 @@
 	width: 29vw;
 	border-style: none;
 	background-color: hsla(0,0%,0%,0.00);
-	height: 50vh;
+	height: 60vh;
 	-o-transition: .5s;
 	-ms-transition: .5s;
 	-moz-transition: .5s;
@@ -112,32 +143,13 @@
 	transform: scale(1.1);
 	
 }
-.home_porfolio_buttons:hover .home_portfolio_text {
-	opacity: 1;
-	text-decoration: none;
-
-	
-}
-.home_portfolio_text {
-	z-index: 100;
-	opacity: .5;
-	color: #000000;
-	text-align: center;
-	-o-transition: .5s;
-	-ms-transition: .5s;
-	-moz-transition: .5s;
-	-webkit-transition: .5s;
-	top: 0px;
-	margin: 0;
-	padding: 2px;
-	text-decoration: none;
-}
 #home_portfolio_snowboard_button {
 	background-image: url(../web_images/shred/home_shred.jpg);
 }
 #home_portfolio_business_button {
 	background-image: url(../web_images/business/blake1.jpg);
 }
+
 #home_footer {
 	width: 100%;
 	color: #FFFFFF;
@@ -154,4 +166,70 @@
 #home_push {
 	height: 40px;
 
+}
+._txt {
+
+}
+
+@media (max-width:600px){
+#home_logo_wrap {
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+	height: 20vh;
+	justify-content: space-around;
+	flex-wrap: no-wrap;
+}
+#home_logo_img {
+	height: 20vh;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#home_logo_txt2 {
+	width: 30vw;
+	margin-left: 3vw;
+	margin-right: 3vw;
+
+}
+
+#home_jumbotron_wrap {
+	flex-direction: column;
+}
+._txt {
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	transform: scale(1.5);
+}
+#home_portfolio {
+	margin: 0px;
+	padding: 20px;
+	width: 100%;
+}
+#home_iam {
+	margin-top: 0vh;
+	margin-bottom: 5vh;
+}
+
+#home_skill_ {
+	padding-left: 3vw;
+
+}
+.home_porfolio_buttons {
+	width: 36vw;
+	padding-top: 2vh;
+}
+
+
+
+
+
+
+
+
+
+
+}
+.portfolio_options {
 }
