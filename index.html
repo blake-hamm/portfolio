@@ -9,7 +9,9 @@
 	<link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="CSS/style.css" rel="stylesheet" type="text/css">
 	<style type="text/css">
-	body {
+@import url("webfonts/Gotu/stylesheet.css");
+
+		body {
 	height: 100%;
 	background-color: #333333;
 		}
@@ -27,6 +29,11 @@ a:hover {
 a:active {
 	text-decoration: none;
 }
+    body,td,th {
+	font-family: Gotu;
+	font-style: normal;
+	font-weight: normal;
+}
     </style>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -41,25 +48,29 @@ a:active {
   <div class="container-fluid" id="page">
     <div class="jumbotron" id="home_jumbotron">
 <div class="row" id="home_jumbotron_wrap">
-        <div class="col-md-3" id="home_logo_wrap"> <img src="web_images/LogoF.jpg" alt="Placeholder image" class="img-responsive" id="home_logo_img">
-          <p id="home_logo_txt2">This website highlights my career goals, experiences and skills for the world to see.</p>
-        </div>
+        <div class="col-md-3" id="home_logo_wrap">
+        	<img src="web_images/LogoF.jpg" alt="Placeholder image" class="img-responsive" id="home_logo_img">
+        	<p class="_txt" id="home_logo_txt2">This website highlights my career goals, experiences and skills for the world to see.</p>
+</div>
         <div class="col-md-9" id="home_portfolio">
-          <h5 class="text-center" id="home_skills">Student &nbsp; / &nbsp; Analyst &nbsp; / &nbsp; Leader &nbsp; / &nbsp; Designer &nbsp; / &nbsp; Athlete</h5>
+          <div id="home_iam">
+              <h4 class="home_skills _txt">I am a&nbsp;</h4>
+              <h4 class="home_skills _txt" id="home_skill_">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.</h4>
+          </div>
 <div id="home_portfolio_selection_wrap">
-            <h1 class="text-center" id="home_portfolio_title">Portfolio Selection</h1>
+            <h1 class="text-center _txt" id="home_portfolio_title">Portfolio Selection</h1>
             <div id="home_portfolio_selection">
               <a href="shred_index.html" class="home_portfolio_links">
               <button type="button" class="home_porfolio_buttons" id="home_portfolio_snowboard_button">
-              <p class="home_portfolio_text">Snowboard Career </p>
+              <p class="_txt portfolio_option" style="font-size:2.4vw">Snowboard Career </p>
               </button>
               </a>
-              <a href="#" class="home_portfolio_links">
+              <a href="business_temp.html" class="home_portfolio_links">
               <button type="button" class="home_porfolio_buttons" id="home_portfolio_business_button">
-              <p class="home_portfolio_text">Business
+              <p class="_txt" style="font-size:2.4vw">Business
                 Career </p>
               </button>
-            </a>            </div>
+</a>            </div>
           </div>
 </div>
 </div>
@@ -73,5 +84,52 @@ a:active {
 
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
 	<script src="../js/bootstrap.js"></script>
+    <script type="text/jscript">
+			function pagefunction(){
+				function student(){
+					document.getElementById("home_skill_").innerHTML = "&nbsp;&nbsp;Student&nbsp;&nbsp;.";  
+				};
+				function analyst(){
+					document.getElementById("home_skill_").innerHTML = "&nbsp;&nbsp;Analyst&nbsp;&nbsp;.";  
+				};
+				function leader(){
+					document.getElementById("home_skill_").innerHTML = "&nbsp;&nbsp;Leader&nbsp;&nbsp;.";  
+				};
+				function designer(){
+					document.getElementById("home_skill_").innerHTML = "&nbsp;&nbsp;Designer&nbsp;.";  
+				};
+				function athlete(){
+					document.getElementById("home_skill_").innerHTML = "&nbsp;&nbsp;Athlete&nbsp;&nbsp;.";  
+				};
+				function blank(){
+					document.getElementById("home_skill_").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.";  
+				};
+				setTimeout(student,2000);
+				setTimeout(analyst,4000);
+				setTimeout(leader,6000);
+				setTimeout(designer,8000);
+				setTimeout(athlete,10000);
+				setTimeout(blank,12000);
+				setTimeout(student,14000);
+				setTimeout(analyst,16000);
+				setTimeout(leader,18000);
+				setTimeout(designer,20000);
+				setTimeout(athlete,22000);
+				setTimeout(blank,24000);
+				setTimeout(student,26000);
+				setTimeout(analyst,28000);
+				setTimeout(leader,30000);
+				setTimeout(designer,32000);
+				setTimeout(athlete,34000);
+				setTimeout(blank,36000);
+				setTimeout(student,38000);
+				setTimeout(analyst,40000);
+				setTimeout(leader,42000);
+				setTimeout(designer,44000);
+				setTimeout(athlete,46000);
+				setTimeout(blank,48000);
+			};
+			window.onload = pagefunction;
+          </script>
 </body>
 </html>

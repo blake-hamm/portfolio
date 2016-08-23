@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Didactic Regular';
+	src: url('Didactic-Regular.eot');
+	src: url('Didactic-Regular.eot?#iefix') format('embedded-opentype'),
+		url('Didactic-Regular.woff') format('woff'),
+		url('Didactic-Regular.ttf') format('truetype'),
+		url('Didactic-Regular.svg') format('svg');
+}
