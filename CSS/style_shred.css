@@ -270,6 +270,16 @@
 #shred_jumbotron {
 	background-image: url(../web_images/shred/shred_home_small.jpg);
 }
+#shred_jumbotron_more   {
+	font-size: small;
+	
+}
+#shred_jumbotron_txt {
+	font-size: small;
+	
+}
+
+
 
 
 
