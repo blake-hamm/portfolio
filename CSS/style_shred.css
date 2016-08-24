@@ -271,13 +271,17 @@
 	background-image: url(../web_images/shred/shred_home_small.jpg);
 }
 #shred_jumbotron_more   {
-	font-size: small;
-	
+	font-size: 13px;
 }
 #shred_jumbotron_txt {
-	font-size: small;
+	font-size: 13px;
 	
 }
+#shred_jumbotron_drop_col {
+
+
+}
+
 
 
 
