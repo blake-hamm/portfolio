@@ -258,3 +258,21 @@
 	overflow-y: auto;
 	height: 100%;
 }
+
+@media (max-width:500px){
+#shred_jumbotron_drop {
+	-webkit-transform: scale(1.7);
+	-moz-transform: scale(1.7);
+	transform: scale(1.7);
+	right: 5vw;
+	top: 2vw;
+}
+#shred_jumbotron {
+	background-image: url(../web_images/shred/shred_home_small.jpg);
+}
+
+
+
+
+
+}
