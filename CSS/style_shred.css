@@ -194,9 +194,9 @@
 .shred_bottom_wraps {
 	width: 430px;
 	height: 230px;
-	margin: 2%;
+	margin: 10px;
 	border-radius: 5px;
-	padding: 1%;
+	padding: 10px;
 	background-position-x: center;
 	background-size: cover;
 	background-position-y: center;
