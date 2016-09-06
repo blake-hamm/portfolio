@@ -18,8 +18,11 @@
   <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">
   <link type="text/css" rel="stylesheet" href="font_awesome/css/font-awesome.css">
   <style type="text/css">
+  @import url("webfonts/Gotu/stylesheet.css");
+
   body,td,th {
 	color: #000000;
+	font-family: Gotu;
 }
 a:link {
 	color: #000000;
@@ -51,74 +54,113 @@ a:active {
   </head>
   <body class="background-image">
 <div class="container-fluid" id="main_wrap">
-  <div id="header_wrap">
-    <div id="header_left_wrap">
-      <div id="header_logo_wrap"> <a href="index.html">
-        <img src="web_images/LogoF.jpg" alt="" width="250" height="250" id="header_logo_img"/>
-        <div id="header_logo_txt_wrap">
-          <h6 id="header_logo_txt">Click to change Portfolio.</h6>
-  &nbsp;</div>
-      </a>
-        
-</div>
-      <div id="header_social_wrap">
-      	<a href="https://www.instagram.com/breezy_hamm/" target="_blank" class="fa fa-instagram fa-lg social_color"></a>
-        <a href="https://vimeo.com/blakejhamm" target="_blank" class="fa fa-vimeo-square fa-lg social_color"></a>
-        <a href="https://www.linkedin.com/in/blakejhamm" target="_blank" class="fa fa-linkedin-square fa-lg social_color"></a>
-        <a href="https://www.facebook.com/blake.hamm.7" target="_blank" class="fa fa-facebook-square fa-lg social_color"></a>
+	<div id="header_wrap">
+	  <div class="header_left_wrap">
+	    <div class="header_logo_wrap"><img src="web_images/LogoF.jpg" alt="" width="250" height="250" class="header_logo_img"/></div>
+	    <div class="header_social_wrap"> <a href="https://www.instagram.com/breezy_hamm/" target="_blank" class="fa fa-instagram fa-lg social_color"></a> <a href="https://vimeo.com/blakejhamm" target="_blank" class="fa fa-vimeo-square fa-lg social_color"></a> <a href="https://www.linkedin.com/in/blakejhamm" target="_blank" class="fa fa-linkedin-square fa-lg social_color"></a> <a href="https://www.facebook.com/blake.hamm.7" target="_blank" class="fa fa-facebook-square fa-lg social_color"></a> </div>
       </div>
-    </div>
-<div id="header_button_wrap">
-      <div class="header_button_style"> <a href="shred_index.html">
-            <h4>Home</h4>
-      </a></div>
-          <div class="header_button_style"> <a href="shred_goals.html">
-            <h4 class="header_button_active">Goals</h4>
-          </a></div>
-          <div class="header_button_style"> <a href="shred_performance.html">
-            <h4>Performance</h4>
-          </a></div>
-<div class="header_button_style"> <a href="shred_media.html">
-        <h4>Media</h4>
-          </a></div>
-          <div class="header_button_style"> <a href="shred_sponsors.html">
-            <h4>Sponsors</h4>
-          </a></div>
-    </div>
-        <div id="header_contact_wrap"> <a href="shred_contact.html" id="header_contact_link">
-          <h4 id="header_contact_h">Contact</h4>
-        </a></div>
+	  <div class="header_button_wrap">
+	    <div class="header_button_style"> <a href="index.html">
+	      <h4 class="header_button_txt">Home</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="shred_goals.html">
+	      <h4 class="header_button_active header_button_txt">Goals</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="shred_performance.html">
+	      <h4 class="header_button_txt">Accomplishments</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="shred_media.html">
+	      <h4 class="header_button_txt">Media</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="shred_sponsors.html">
+	      <h4 class="header_button_txt">Sponsors</h4>
+	      </a></div>
+      </div>
+	  <div class="header_contact_wrap"> <a href="shred_contact.html" class="header_contact_link">
+	    <h4 class="header_contact_h header_button_txt">Contact</h4>
+	    </a></div>
+  </div>
+	<div id="small_wrap" class="small_header_wrap">
+<button type="button" class="small_header_button" id="small_header_button" onClick="menuFunction()">
+       	<span id="small_icon" class="glyphicon glyphicon-menu-hamburger"></span>&nbsp;Menu 
+		</button>
+</div>
+	<div class="small_hide" id="small_wrap_active">
+    <button type="button" class="small_header_button" id="small_header_button_active" onClick="menuxFunction()">
+    	<span id="small_icon_active" class="glyphicon glyphicon-remove"></span>&nbsp;Menu 
+		</button>
+      <div class="header_left_wrap">
+	      <div class="header_logo_wrap"><img src="web_images/LogoF.jpg" alt="" width="250" height="250" class="header_logo_img"/></div>
+        <div class="header_social_wrap"> <a href="https://www.instagram.com/breezy_hamm/" target="_blank" class="fa fa-instagram fa-lg social_color"></a> <a href="https://vimeo.com/blakejhamm" target="_blank" class="fa fa-vimeo-square fa-lg social_color"></a> <a href="https://www.linkedin.com/in/blakejhamm" target="_blank" class="fa fa-linkedin-square fa-lg social_color"></a> <a href="https://www.facebook.com/blake.hamm.7" target="_blank" class="fa fa-facebook-square fa-lg social_color"></a> </div>
         </div>
-    <div class="container well" id="main_content">
-      <h2 class="text-center">Snowboard Career Goals</h2>
-<ul>
-      <li>
-            <h4>            Continue to refine a unique style that displays my smooth and powerful riding. </h4>
-          </li>
-      <li>
-        <h4>Display this style to the snowboard community through media and competition. </h4>
-      </li>
-          <li class="goals_li_indent">
-            <h4>Attain a major media publishing in TGR, Snowboarder Mag, TW Snow, etc. </h4>
-          </li>
-          
-          <li class="goals_li_indent">
-            <h4>Organize a snowboard-only jam format freeride competition</h4>
-          </li>
-      <li class="goals_li_indent">
-        <h4>Earn a Sickbird belt buckle at the Freeskiing World Tour </h4>
-      </li>
-          <li class="goals_li_indent">
-            <h4>Qualify for the Freeride World Tour</h4>
-          </li>
-          <li>
-            <h4>Strive to be healthy and fit. </h4>
-      </li>
-        </ul>
+	    <div id="small_button_wrap">
+	      <div class="header_button_wrap">
+	        <div class="header_button_style"> <a href="index.html">
+	          <h4 class="header_button_txt">Home</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="shred_goals.html">
+	          <h4 class="header_button_active header_button_txt">Goals</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="shred_performance.html">
+	          <h4 class="header_button_txt">Accomplishments</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="shred_media.html">
+	          <h4 class="header_button_txt">Media</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="shred_sponsors.html">
+	          <h4 class="header_button_txt">Sponsors</h4>
+	          </a></div>
+          </div>
+	      <div class="header_contact_wrap"> <a href="shred_contact.html" class="header_contact_link">
+	        <h4 class="header_button_txt header_contact_h">Contact</h4>
+	        </a></div>
+        </div>
       </div>
-</div>
-  <div id="push">&nbsp;</div>
+	<div class="container well" id="main_content">
+	  <h2 class="text-center shred_title">Snowboard Career Goals</h2>
+	  <ul class="shred_content">
+	    <li>
+	      <h4 class="shred_bullets"> Continue to refine a unique style that displays my smooth and powerful riding. </h4>
+        </li>
+	    <li>
+	      <h4 class="shred_bullets">Display this style to the snowboard community through media and competition. </h4>
+        </li>
+	    <li class="goals_li_indent">
+	      <h5 class="shred_bullets">Attain a major media publishing in TGR, Snowboarder Mag, TW Snow, etc.</h5>
+        </li>
+	    <li class="goals_li_indent">
+	      <h5 class="shred_bullets">Organize a snowboard-only jam format freeride competition.</h5>
+        </li>
+	    <li class="goals_li_indent">
+	      <h5 class="shred_bullets">Earn a Sickbird belt buckle at the Freeskiing World Tour.</h5>
+        </li>
+	    <li class="goals_li_indent">
+	      <h5 class="shred_bullets">Qualify for the Freeride World Tour.</h5>
+        </li>
+	    <li>
+	      <h4 class="shred_bullets">Maintain mutally benificial, long-term relationships with sponsors that will...</h4>
+	    </li>
+        <li class="goals_li_indent">
+	      <h5 class="shred_bullets">Allow me to be an integral part in product development, marketing and strategy.</h5></li>
+        <li class="goals_li_indent">
+          <h5 class="shred_bullets">Provide me with resources to travel and compete/film in order to accomplish aforementioned goals.</h5>
+        </li>
+      </ul>
+  </div>
+    </div>
+<script type="text/javascript">
+  	function menuFunction() {
+		document.getElementById("small_wrap_active").className = "small_wrap_active";
+		document.getElementById("small_wrap").className = "small_hide";
+	}
+	function menuxFunction() {
+		document.getElementById("small_wrap_active").className = "small_hide";
+		document.getElementById("small_wrap").className = "small_header_wrap";
+	}
+	</script>
+<div id="push">&nbsp;</div>
   <footer id="foot">
+  <a href="shred_contact.html" id="footer_contact">Contact Info</a><br>
   <span class="glyphicon glyphicon-copyright-mark"></span> Copyright 2016 by Blake Hamm
 	</footer>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 

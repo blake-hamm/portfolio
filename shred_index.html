@@ -46,11 +46,7 @@ body,td,th {
 <div class="jumbotron" id="shred_jumbotron">
     <div id="shred_jumbotron_col">
         <div id="shred_jumbotron_logo_col">
-          <div id="shred_logo_hover"> <a href="index.html"><img src="web_images/LogoF.jpg" alt="Placeholder image" class="img-responsive" id="shred_jumbotron_logo">
-          <div id="shred_logo_txt_wrap">
-            <p id="shred_logo_txt">Click to change Porfolio.</p>
-          </div>
-          </a></div>
+          <div id="shred_logo_hover"><img src="web_images/LogoF.jpg" alt="Placeholder image" class="img-responsive" id="shred_jumbotron_logo"> </div>
         </div>
         <div id="shred_jumbotron_txt_col">
           <p id="shred_jumbotron_txt"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Snowboarding is my biggest passion in life. A goal of mine is to structure a career that allows me to live nomadically in order to pursue the perfection of my snowboard style. This website provides sponsors with an understanding of how mutually beneficial relationships will help both of us to acheive our goals.</p>
@@ -60,9 +56,11 @@ body,td,th {
           <div class="btn-group" id="shred_jumbotron_drop">
             <button type="button" class="btn btn-sm btn-default dropdown-toggle" id="shred_jumbotron_button" aria-expanded="false" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-hamburger"></span>&nbsp;Menu </button>
             <ul class="dropdown-menu pull-right dropdown_box" role="menu">
-              <li role="presentation" class="dropdown_txt dropdown_header">Snowboard Portfolio</li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html" class="dropdown_txt">Home</a></li>
               <li role="presentation" class="divider dropdown_txt"></li>
+              <li role="presentation" class="dropdown_txt dropdown_header">Snowboard Portfolio</li>
               <li role="presentation"><a role="menuitem" tabindex="-1" href="shred_goals.html" class="dropdown_txt">Goals</a></li>
+              
               <li role="presentation"><a role="menuitem" tabindex="-1" href="shred_performance.html" class="dropdown_txt">Accomplishments</a></li>
               
               <li role="presentation"><a role="menuitem" tabindex="-1" href="shred_media.html" class="dropdown_txt">Media</a></li>
@@ -91,6 +89,7 @@ body,td,th {
             <li>Publications.</li>
             <li>Event results.</li>
             <li>Relevant skills. </li>
+            <li>Avalanche knowledge. </li>
           </ul>
         <a href="shred_performance.html" class="black_link">Click for more</a>        </div>
 </div>
@@ -126,7 +125,8 @@ body,td,th {
     </div>
 </div>
   <div id="shred_push"></div>
-	<footer id="shred_footer"><span class="glyphicon glyphicon-copyright-mark"></span> Copyright 2016 by Blake Hamm</footer>
+	<footer id="shred_footer"><a href="shred_contact.html" id="footer_contact">Contact Info</a><br>
+    <span class="glyphicon glyphicon-copyright-mark"></span> Copyright 2016 by Blake Hamm</footer>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<!-- JQuery JS URL-->
 

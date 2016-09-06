@@ -18,8 +18,11 @@
   <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">
   <link type="text/css" rel="stylesheet" href="font_awesome/css/font-awesome.css">
   <style type="text/css">
+  @import url("webfonts/Gotu/stylesheet.css");
+
   body,td,th {
 	color: #000000;
+	font-family: Gotu;
 }
 a:link {
 	color: #000000;
@@ -52,67 +55,108 @@ a:active {
   <body class="background-image">
 <div class="container-fluid" id="main_wrap">
   <div id="header_wrap">
-    <div id="header_left_wrap">
-      <div id="header_logo_wrap"> <a href="index.html">
-        <img src="web_images/LogoF.jpg" alt="" width="250" height="250" id="header_logo_img"/>
-        <div id="header_logo_txt_wrap">
-          <h6 id="header_logo_txt">Click to change Portfolio.</h6>
-  &nbsp;</div>
-      </a>
-        
-</div>
-      <div id="header_social_wrap">
-      	<a href="https://www.instagram.com/breezy_hamm/" target="_blank" class="fa fa-instagram fa-lg social_color"></a>
-        <a href="https://vimeo.com/blakejhamm" target="_blank" class="fa fa-vimeo-square fa-lg social_color"></a>
-        <a href="https://www.linkedin.com/in/blakejhamm" target="_blank" class="fa fa-linkedin-square fa-lg social_color"></a>
-        <a href="https://www.facebook.com/blake.hamm.7" target="_blank" class="fa fa-facebook-square fa-lg social_color"></a>
+	  <div class="header_left_wrap">
+	    <div class="header_logo_wrap"><img src="web_images/LogoF.jpg" alt="" width="250" height="250" class="header_logo_img"/></div>
+	    <div class="header_social_wrap"> <a href="https://www.instagram.com/breezy_hamm/" target="_blank" class="fa fa-instagram fa-lg social_color"></a> <a href="https://vimeo.com/blakejhamm" target="_blank" class="fa fa-vimeo-square fa-lg social_color"></a> <a href="https://www.linkedin.com/in/blakejhamm" target="_blank" class="fa fa-linkedin-square fa-lg social_color"></a> <a href="https://www.facebook.com/blake.hamm.7" target="_blank" class="fa fa-facebook-square fa-lg social_color"></a> </div>
       </div>
-    </div>
-<div id="header_button_wrap">
-      <div class="header_button_style"> <a href="shred_index.html">
-            <h4>Home</h4>
-      </a></div>
-          <div class="header_button_style"> <a href="shred_goals.html">
-            <h4>Goals</h4>
-          </a></div>
-          <div class="header_button_style"> <a href="shred_performance.html">
-            <h4 class="header_button_active">Performance</h4>
-          </a></div>
-<div class="header_button_style"> <a href="shred_media.html">
-        <h4>Media</h4>
-          </a></div>
-          <div class="header_button_style"> <a href="shred_sponsors.html">
-          <h4>Sponsors</h4>
-          </a></div>
-    </div>
-        <div id="header_contact_wrap"> <a href="shred_contact.html" id="header_contact_link">
-          <h4 id="header_contact_h">Contact</h4>
-        </a></div>
+	  <div class="header_button_wrap">
+	    <div class="header_button_style"> <a href="index.html">
+	      <h4 class="header_button_txt">Home</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="shred_goals.html">
+	      <h4 class="header_button_txt">Goals</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="shred_performance.html">
+	      <h4 class="header_button_active  header_button_txt">Accomplishments</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="shred_media.html">
+        <h4 class="header_button_txt">Media</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="shred_sponsors.html">
+	      <h4 class="header_button_txt">Sponsors</h4>
+	      </a></div>
+      </div>
+	  <div class="header_contact_wrap"> <a href="shred_contact.html" class="header_contact_link">
+	    <h4 class="header_contact_h header_button_txt">Contact</h4>
+	    </a></div>
+  </div>
+	<div id="small_wrap" class="small_header_wrap">
+<button type="button" class="small_header_button" id="small_header_button" onClick="menuFunction()">
+       	<span id="small_icon" class="glyphicon glyphicon-menu-hamburger"></span>&nbsp;Menu 
+		</button>
+</div>
+	<div class="small_hide" id="small_wrap_active">
+    <button type="button" class="small_header_button" id="small_header_button_active" onClick="menuxFunction()">
+    	<span id="small_icon_active" class="glyphicon glyphicon-remove"></span>&nbsp;Menu 
+		</button>
+      <div class="header_left_wrap">
+	      <div class="header_logo_wrap"><img src="web_images/LogoF.jpg" alt="" width="250" height="250" class="header_logo_img"/></div>
+        <div class="header_social_wrap"> <a href="https://www.instagram.com/breezy_hamm/" target="_blank" class="fa fa-instagram fa-lg social_color"></a> <a href="https://vimeo.com/blakejhamm" target="_blank" class="fa fa-vimeo-square fa-lg social_color"></a> <a href="https://www.linkedin.com/in/blakejhamm" target="_blank" class="fa fa-linkedin-square fa-lg social_color"></a> <a href="https://www.facebook.com/blake.hamm.7" target="_blank" class="fa fa-facebook-square fa-lg social_color"></a> </div>
         </div>
+	    <div id="small_button_wrap">
+	      <div class="header_button_wrap">
+	        <div class="header_button_style"> <a href="index.html">
+	          <h4 class="header_button_txt">Home</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="shred_goals.html">
+	          <h4 class=" header_button_txt">Goals</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="shred_performance.html">
+	          <h4 class="header_button_active header_button_txt">Accomplishments</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="shred_media.html">
+	          <h4 class="header_button_txt">Media</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="shred_sponsors.html">
+	          <h4 class="header_button_txt">Sponsors</h4>
+	          </a></div>
+          </div>
+	      <div class="header_contact_wrap"> <a href="shred_contact.html" class="header_contact_link">
+	        <h4 class="header_button_txt header_contact_h">Contact</h4>
+	        </a></div>
+        </div>
+      </div>
     <div class="container well" id="main_content">
-      <h2 class="text-center">Snowboard Career Performance</h2>
-      <div>
+      <h2 class="text-center">Snowboard Career Accomplishments</h2>
+      <div class="shred_content">
         <ul class="shred_list">
           <li>
             <h4>Article published in Snowboard Northwest Magazine in 2016. <a href="http://snowboardnorthwest.com/blake-hamm-stevens-pass-pillows/" target="_blank" class="black_ink">Click to view.</a></h4>
           </li>
-          <li><h4>1st place finish at the Snowbird IFSA Collegiate stop in 2015 (2 star FWQ event). </h4></li>
-          <li><h4>2nd place finish at the Salomon Extreme Freeride Championships at Taos in 2015 (4 star FWQ event).</h4></li>
-          <li><h4>3rd place finish in the Subaru Freeride Series at Big Sky in 2014 (2 star FWQ event) with a 90 score.</h4></li>
-          <li><h4>5th place finish at the Salomon Extreme Freeride Championships at Taos in 2016 (4 star FWQ event).</h4></li>
-          <li><h4>8th place finish in the Subaru Freeride Series at Crested Butte in 2014 (2 star FWQ event).</h4></li>
+		  <li>
+	      <h4>Top Freeride competition finishes.</h4>
+        </li>      
+          <li class="goals_li_indent"><h5>1st place finish at the Snowbird IFSA Collegiate stop in 2015 (2 star FWQ event). </h5></li>
+          <li class="goals_li_indent"><h5>2nd place finish at the Salomon Extreme Freeride Championships at Taos in 2015 (4 star FWQ event).</h5></li>
+          <li class="goals_li_indent"><h5>3rd place finish in the Subaru Freeride Series at Big Sky in 2014 (2 star FWQ event) with a 90 score.</h5></li>
+          <li class="goals_li_indent"><h5>5th place finish at the Salomon Extreme Freeride Championships at Taos in 2016 (4 star FWQ event).</h5></li>
+          <li class="goals_li_indent"><h5>8th place finish in the Subaru Freeride Series at Crested Butte in 2014 (2 star FWQ event).</h5></li>
           <li>
             <h4>13 years of snowboarding and 6 years of skiing experience including IFSA comps, USASA comps, private training, and group lessons. </h4>
           </li>
           <li>
-            <h4>Relevant skills include marketing and communication profficiency developed through my business career and past sponsor experience.&nbsp;<a href="#" target="_blank" class="black_ink">Click for details.</a></h4>
+            <h4>AIARE Level 1 avalanche certification attained on Dec 20th, 2015.&nbsp;<a href="web_images/AIARE_Class_Cert_Blake Hamm_12_20_2015.pdf" target="_blank" class="black_ink">Click to view.</a></h4>
+          </li>
+          <li>
+            <h4>Relevant skills include marketing and communication profficiency developed through my business career and past sponsor experience.&nbsp;<a href="business_temp.html" target="_blank" class="black_ink">Click for details.</a></h4>
           </li>
         </ul>
       </div>
   </div>
 </div>
+<script type="text/javascript">
+  	function menuFunction() {
+		document.getElementById("small_wrap_active").className = "small_wrap_active";
+		document.getElementById("small_wrap").className = "small_hide";
+	}
+	function menuxFunction() {
+		document.getElementById("small_wrap_active").className = "small_hide";
+		document.getElementById("small_wrap").className = "small_header_wrap";
+	}
+	</script>
   <div id="push">&nbsp;</div>
   <footer id="foot">
+  <a href="shred_contact.html" id="footer_contact">Contact Info</a><br>
   <span class="glyphicon glyphicon-copyright-mark"></span> Copyright 2016 by Blake Hamm
 	</footer>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 

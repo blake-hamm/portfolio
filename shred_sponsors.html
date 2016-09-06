@@ -18,8 +18,11 @@
   <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">
   <link type="text/css" rel="stylesheet" href="font_awesome/css/font-awesome.css">
   <style type="text/css">
+  @import url("webfonts/Gotu/stylesheet.css");
+
   body,td,th {
 	color: #000000;
+	font-family: Gotu;
 }
 a:link {
 	color: #000000;
@@ -52,43 +55,67 @@ a:active {
   <body class="background-image">
 <div class="container-fluid" id="main_wrap">
   <div id="header_wrap">
-    <div id="header_left_wrap">
-      <div id="header_logo_wrap"> <a href="index.html">
-        <img src="web_images/LogoF.jpg" alt="" width="250" height="250" id="header_logo_img"/>
-        <div id="header_logo_txt_wrap">
-          <h6 id="header_logo_txt">Click to change Portfolio.</h6>
-  </div>
-      </a>
-        
-</div>
-      <div id="header_social_wrap">
-      	<a href="https://www.instagram.com/breezy_hamm/" target="_blank" class="fa fa-instagram fa-lg social_color"></a>
-        <a href="https://vimeo.com/blakejhamm" target="_blank" class="fa fa-vimeo-square fa-lg social_color"></a>
-        <a href="https://www.linkedin.com/in/blakejhamm" target="_blank" class="fa fa-linkedin-square fa-lg social_color"></a>
-        <a href="https://www.facebook.com/blake.hamm.7" target="_blank" class="fa fa-facebook-square fa-lg social_color"></a>
+	  <div class="header_left_wrap">
+	    <div class="header_logo_wrap"><img src="web_images/LogoF.jpg" alt="" width="250" height="250" class="header_logo_img"/></div>
+	    <div class="header_social_wrap"> <a href="https://www.instagram.com/breezy_hamm/" target="_blank" class="fa fa-instagram fa-lg social_color"></a> <a href="https://vimeo.com/blakejhamm" target="_blank" class="fa fa-vimeo-square fa-lg social_color"></a> <a href="https://www.linkedin.com/in/blakejhamm" target="_blank" class="fa fa-linkedin-square fa-lg social_color"></a> <a href="https://www.facebook.com/blake.hamm.7" target="_blank" class="fa fa-facebook-square fa-lg social_color"></a> </div>
       </div>
-    </div>
-<div id="header_button_wrap">
-      <div class="header_button_style"> <a href="shred_index.html">
-            <h4>Home</h4>
-      </a></div>
-          <div class="header_button_style"> <a href="shred_goals.html">
-            <h4>Goals</h4>
-          </a></div>
-          <div class="header_button_style"> <a href="shred_performance.html">
-            <h4>Performance</h4>
-          </a></div>
-<div class="header_button_style"> <a href="shred_media.html">
-        <h4>Media</h4>
-          </a></div>
-          <div class="header_button_style"> <a href="shred_sponsors.html">
-            <h4 class="header_button_active">Sponsors</h4>
-          </a></div>
-    </div>
-        <div id="header_contact_wrap"> <a href="shred_contact.html" id="header_contact_link">
-          <h4 id="header_contact_h">Contact</h4>
-        </a></div>
+	  <div class="header_button_wrap">
+	    <div class="header_button_style"> <a href="index.html">
+	      <h4 class="header_button_txt">Home</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="shred_goals.html">
+	      <h4 class="header_button_txt">Goals</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="shred_performance.html">
+	      <h4 class="header_button_txt">Accomplishments</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="shred_media.html">
+	      <h4 class="header_button_txt">Media</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="shred_sponsors.html">
+	      <h4 class="header_button_active header_button_txt">Sponsors</h4>
+	      </a></div>
+      </div>
+	  <div class="header_contact_wrap"> <a href="shred_contact.html" class="header_contact_link">
+	    <h4 class="header_contact_h header_button_txt">Contact</h4>
+	    </a></div>
+  </div>
+	<div id="small_wrap" class="small_header_wrap">
+<button type="button" class="small_header_button" id="small_header_button" onClick="menuFunction()">
+       	<span id="small_icon" class="glyphicon glyphicon-menu-hamburger"></span>&nbsp;Menu 
+		</button>
+</div>
+	<div class="small_hide" id="small_wrap_active">
+    <button type="button" class="small_header_button" id="small_header_button_active" onClick="menuxFunction()">
+    	<span id="small_icon_active" class="glyphicon glyphicon-remove"></span>&nbsp;Menu 
+		</button>
+      <div class="header_left_wrap">
+	      <div class="header_logo_wrap"><img src="web_images/LogoF.jpg" alt="" width="250" height="250" class="header_logo_img"/></div>
+        <div class="header_social_wrap"> <a href="https://www.instagram.com/breezy_hamm/" target="_blank" class="fa fa-instagram fa-lg social_color"></a> <a href="https://vimeo.com/blakejhamm" target="_blank" class="fa fa-vimeo-square fa-lg social_color"></a> <a href="https://www.linkedin.com/in/blakejhamm" target="_blank" class="fa fa-linkedin-square fa-lg social_color"></a> <a href="https://www.facebook.com/blake.hamm.7" target="_blank" class="fa fa-facebook-square fa-lg social_color"></a> </div>
         </div>
+	    <div id="small_button_wrap">
+	      <div class="header_button_wrap">
+	        <div class="header_button_style"> <a href="index.html">
+	          <h4 class="header_button_txt">Home</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="shred_goals.html">
+	          <h4 class="header_button_txt">Goals</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="shred_performance.html">
+	          <h4 class="header_button_txt">Accomplishments</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="shred_media.html">
+	          <h4 class="header_button_txt">Media</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="shred_sponsors.html">
+	          <h4 class="header_button_active header_button_txt">Sponsors</h4>
+	          </a></div>
+          </div>
+	      <div class="header_contact_wrap"> <a href="shred_contact.html" class="header_contact_link">
+	        <h4 class="header_button_txt header_contact_h">Contact</h4>
+	        </a></div>
+        </div>
+      </div>
     <div class="container well" id="main_content">
       <h2 class="text-center">Current Sponsors </h2>
       <h5 class="text-center">*Currently seeking a board and outerwear sponsorship.* </h5>
@@ -147,6 +174,7 @@ a:active {
 </div>
   <div id="push">&nbsp;</div>
   <footer id="foot">
+  <a href="shred_contact.html" id="footer_contact">Contact Info</a><br>
   <span class="glyphicon glyphicon-copyright-mark"></span> Copyright 2016 by Blake Hamm
 	</footer>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
@@ -154,6 +182,16 @@ a:active {
 
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
 	<!-- Bootstrap JS URL-->
+    <script type="text/javascript">
+  	function menuFunction() {
+		document.getElementById("small_wrap_active").className = "small_wrap_active";
+		document.getElementById("small_wrap").className = "small_hide";
+	}
+	function menuxFunction() {
+		document.getElementById("small_wrap_active").className = "small_hide";
+		document.getElementById("small_wrap").className = "small_header_wrap";
+	}
+	</script>
    	<script type="text/javascript">
 	function giroFunction() {
 		document.getElementById("giro_").className = "sponsor_pop_active";

@@ -1,4 +1,17 @@
 @charset "utf-8";
+#footer_contact {
+	color: #FFFFFF;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	text-decoration: underline;
+}
+#footer_contact:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+	text-shadow: 1px 1px #FFFFFF;
+}
 #shred_wrap {
 	min-height: 100%;
 	margin-bottom: -40px;
@@ -63,17 +76,6 @@
 	-ms-transition: .5s;
 	-moz-transition: .5s;
 	-webkit-transition: .5s;
-}
-#shred_logo_hover:hover #shred_jumbotron_logo {
-	width: auto;
-	margin: 0;
-	padding: 2%;
-	height: auto;
-	opacity: 0.2;
-}
-#shred_logo_hover:hover #shred_logo_txt {
-	opacity: 1;
-
 }
 #shred_logo_txt_wrap {
 	position: absolute;
@@ -174,8 +176,11 @@
 .dropdown_header {
 	display: block;
 	padding: 3px 20px;
-  	color: #777;
+	color: #777;
 	white-space: nowrap;
+	text-decoration: none;
+	font-variant: normal;
+	font-weight: bold;
 }
 
 
@@ -189,7 +194,7 @@
 	background-size: cover;
 	padding: 0;
 	margin: 0;
-	justify-content: space-around;
+	justify-content: center;
 }
 .shred_bottom_wraps {
 	width: 430px;
