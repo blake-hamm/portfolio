@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Untitled Document</title>
+    <title>Business Template</title>
     <!-- Bootstrap -->
 	<!-- Bootstrap URL-->
 
@@ -17,6 +17,7 @@
   <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="CSS/style_business.css" rel="stylesheet" type="text/css">
   <link type="text/css" rel="stylesheet" href="font_awesome/css/font-awesome.css">
+  <link rel="icon" type="image/jpeg" href="web_images/LogoF.jpg">
   <style type="text/css">
   a:link {
 	color: #000000;
@@ -40,45 +41,72 @@ a:active {
 }
 
   </style>
+  <link href="CSS/style_shred_nav.css" rel="stylesheet" type="text/css">
   </head>
   <body>
   <div class="background_img">
     <div class="container-fluid business_body">
-      <div id="header_wrap">
-        <div id="header_left_wrap">
-          <div id="header_logo_wrap"> <a href="index.html">
-          <img src="web_images/LogoF.jpg" alt="" width="250" height="250" id="header_logo_img"/>
-          <div id="header_logo_txt_wrap">
-            <h6 id="header_logo_txt">Click to change Portfolio.</h6>
-          </div>
-          </a>
-              
+    <div id="header_wrap">
+	  <div class="header_left_wrap">
+	    <div class="header_logo_wrap"><img src="web_images/LogoF.jpg" alt="" width="250" height="250" class="header_logo_img"/></div>
+	    <div class="header_social_wrap"> <a href="https://www.instagram.com/breezy_hamm/" target="_blank" class="fa fa-instagram fa-lg social_color"></a> <a href="https://vimeo.com/blakejhamm" target="_blank" class="fa fa-vimeo-square fa-lg social_color"></a> <a href="https://www.linkedin.com/in/blakejhamm" target="_blank" class="fa fa-linkedin-square fa-lg social_color"></a> <a href="https://www.facebook.com/blake.hamm.7" target="_blank" class="fa fa-facebook-square fa-lg social_color"></a> </div>
+      </div>
+	  <div class="header_button_wrap">
+	    <div class="header_button_style"> <a href="index.html">
+	      <h4 class="header_button_txt">Home</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="business_hist.html">
+	      <h4 class="header_button_txt">History</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="#">
+	      <h4 class="header_button_txt">Skills</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="#">
+	      <h4 class="header_button_txt">Projects</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="#">
+	      <h4 class="header_button_txt">Recomendations</h4>
+	      </a></div>
+      </div>
+	  <div class="header_contact_wrap"> <a href="#" class="header_contact_link">
+	    <h4 class="header_contact_h header_button_txt header_button_active">Contact</h4>
+	    </a></div>
   </div>
-          <div id="header_social_wrap">
-            <a href="https://www.instagram.com/breezy_hamm/" target="_blank" class="fa fa-instagram fa-lg social_color"></a>
-            <a href="https://vimeo.com/blakejhamm" target="_blank" class="fa fa-vimeo-square fa-lg social_color"></a>
-            <a href="https://www.linkedin.com/in/blakejhamm" target="_blank" class="fa fa-linkedin-square fa-lg social_color"></a>
-            <a href="https://www.facebook.com/blake.hamm.7" target="_blank" class="fa fa-facebook-square fa-lg social_color"></a>
+	<div id="small_wrap" class="small_header_wrap">
+<button type="button" class="small_header_button" id="small_header_button" onClick="menuFunction()">
+       	<span id="small_icon" class="glyphicon glyphicon-menu-hamburger"></span>&nbsp;Menu 
+		</button>
+</div>
+	<div class="small_hide" id="small_wrap_active">
+    <button type="button" class="small_header_button" id="small_header_button_active" onClick="menuxFunction()">
+    	<span id="small_icon_active" class="glyphicon glyphicon-remove"></span>&nbsp;Menu 
+		</button>
+      <div class="header_left_wrap">
+	      <div class="header_logo_wrap"><img src="web_images/LogoF.jpg" alt="" width="250" height="250" class="header_logo_img"/></div>
+        <div class="header_social_wrap"> <a href="https://www.instagram.com/breezy_hamm/" target="_blank" class="fa fa-instagram fa-lg social_color"></a> <a href="https://vimeo.com/blakejhamm" target="_blank" class="fa fa-vimeo-square fa-lg social_color"></a> <a href="https://www.linkedin.com/in/blakejhamm" target="_blank" class="fa fa-linkedin-square fa-lg social_color"></a> <a href="https://www.facebook.com/blake.hamm.7" target="_blank" class="fa fa-facebook-square fa-lg social_color"></a> </div>
+        </div>
+	    <div id="small_button_wrap">
+	      <div class="header_button_wrap">
+	        <div class="header_button_style"> <a href="index.html">
+	          <h4 class="header_button_txt">Home</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="business_hist.html">
+	          <h4 class="header_button_txt">History</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="#">
+	          <h4 class="header_button_txt">Skills</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="#">
+	          <h4 class="header_button_txt">Projects</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="#">
+	          <h4 class="header_button_txt">Recomendations</h4>
+	          </a></div>
           </div>
+	      <div class="header_contact_wrap"> <a href="#" class="header_contact_link">
+	        <h4 class="header_button_txt header_contact_h header_button_active">Contact</h4>
+	        </a></div>
         </div>
-        <div id="header_button_wrap">
-          <div class="header_button_style"> <a href="index.html">
-              <h4>Home</h4>
-          </a></div>
-            <div class="header_button_style"> <a href="#">
-              <h4>Past Employment</h4>
-            </a></div>
-            <div class="header_button_style"> <a href="#">
-              <h4>Skills</h4>
-            </a></div>
-  <div class="header_button_style"> <a href="#">
-    <h4>Projects</h4>
-    </a></div>
-        </div>
-          <div id="header_contact_wrap"> <a href="#" id="header_contact_link">
-            <h4>Contact</h4>
-          </a></div>
-          
       </div>
       <div class="container" id="main_body">More Coming Soon!</div>
     </div>
@@ -92,5 +120,15 @@ a:active {
 
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
 	<!-- Bootstrap JS URL-->
+    <script type="text/javascript">
+  	function menuFunction() {
+		document.getElementById("small_wrap_active").className = "small_wrap_active";
+		document.getElementById("small_wrap").className = "small_hide";
+	}
+	function menuxFunction() {
+		document.getElementById("small_wrap_active").className = "small_hide";
+		document.getElementById("small_wrap").className = "small_header_wrap";
+	}
+	</script>
   </body>
 </html>
