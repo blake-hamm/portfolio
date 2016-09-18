@@ -154,17 +154,98 @@
 	background-attachment: fixed;
 	background-position: center 10vh;
 	}
+	.background_img_{
+	background-image: url(../web_images/business_background.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+	}
 #main_body {
-	margin-top: 30vh;
-	padding: 5vh;
-	margin-bottom: 10vh;
 	border-radius: 5px;
-	background-color: hsla(0,0%,100%,0.70);
-	margin-left: 5vw;
-	margin-right: 5vw;
-	width: 90vw;
-
+	background-color: rgba(255,255,255,0.80);
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 20px;
+	top: 0;
+	margin-top: 20vh;
+	width: auto;
+	margin-bottom: 10vh;
 }
+.index_divs {
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.80);
+	margin: 10vh;
+	padding: 20px;
+	width: 80vw;
+	height: 40vh;
+	top:0;
+	display:flex;
+	justify-content:space-around;
+	align-content:center;
+	}
+
+.bus_img_div{
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:auto;
+	min-width:15vw;
+	height:30vh;
+	border-radius: 5px;
+	align-self:center;
+	}
+.bus_txt_div{
+	width:50vw;
+	height:auto;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-content:flex-start;
+	}
+	
+#history_img{
+	background-image:url(../web_images/business/blake4.jpg)
+	}
+#skills_img{
+	background-image:url(../web_images/business/blake6.jpg)
+	}
+#projects_img{
+	background-image:url(../web_images/business/blake9.jpg)
+	}
+#accolades_img{
+	background-image:url(../web_images/business/blake8.jpg)
+	}
+
+#bus_index {
+	padding-top:10vh;
+	}
+#bus_buttons{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	position:fixed;
+	top:5vh;
+	width:100%;
+	height:auto;	
+	}
+#dropdownMenu1{
+
+	}
+#dropdownMenu1_{
+	left:40%;
+	right:40%;
+	}
+.dropdown_txt{
+	text-align:center;
+	}
+.dropdown_header{
+	color: #777;
+	white-space: nowrap;
+	text-decoration: underline;
+	font-variant: normal;
+	font-weight: bold;
+	}
+	
 .hist_title {
 	margin-top: 20px;
 	padding: 0px;
@@ -178,13 +259,27 @@
 	padding: 0;
 }
 .hist_table {
-	margin-left: 30px;
+	margin-left: 35px;
+	margin-right: 0px;
+	min-width: 85vw;
 }
 .hist_table_item {
 	vertical-align: top;
-	padding-left: 5px;
+	padding-left: 10px;
 	padding-right: 5px;
 
 }
+
 .pro_title {
+}
+#skill_table {
+	margin: 15px;
+}
+.table_row_sp {
+	padding-bottom: 10px;
+	padding-top: 10px;
+
+}
+.link_color {
+	color: #000000;
 }

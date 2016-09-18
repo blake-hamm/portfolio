@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Untitled Document</title>
+    <title>Business Home</title>
     <!-- Bootstrap -->
 	<!-- Bootstrap URL-->
 
@@ -14,14 +14,100 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-  <link href="CSS/style_shred_nav" rel="stylesheet" type="text/css">
   <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="CSS/style_business.css" rel="stylesheet" type="text/css">
+  <link type="text/css" rel="stylesheet" href="font_awesome/css/font-awesome.css">
+  <link rel="icon" type="image/jpeg" href="web_images/LogoF.jpg">
+  <style type="text/css">
+  @import url("webfonts/Gotu/stylesheet.css");
+
+  a:link {
+	color: #000000;
+	text-decoration: none;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+}
+a:hover {
+	color: #696969;
+	text-decoration: none;
+}
+  a:visited {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+  body {
+}
+
+  </style>
+  <link href="CSS/style_shred_nav.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  body,td,th {
+	font-family: Gotu;
+}
+  </style>
   </head>
   <body>
-  <div class="container-fluid business_body"></div>
+  <div class="background_img_">
+  	    	<div class="dropdown" id="bus_buttons">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-menu-hamburger"></span>&nbsp;
+    Menu
+  </button>
+  <ul class="dropdown-menu dropdown_box" id="dropdownMenu1_" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html" class="dropdown_txt">Home</a></li>
+              <li role="presentation" class="divider dropdown_txt"></li>
+              <li role="presentation" class="dropdown_txt dropdown_header">Business Portfolio</li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="business_hist.html" class="dropdown_txt">Employment History</a></li>
+              
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="business_skills.html" class="dropdown_txt">Employment Skills</a></li>
+              
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="business_projects.html" class="dropdown_txt">Business Projects</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="business_accolades.html" class="dropdown_txt">Business Accolades</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="business_contact.html" class="dropdown_txt">Contact</a></li>
+            </ul>
+</div>
+    <div class="container-fluid business_body" id="bus_index">
+      <div class="index_divs">
+      	<div id="history_img" class="bus_img_div">&nbsp;</div>
+        <div class="bus_txt_div">
+        	<h4>Employment History</h4>
+            <h5>This page will provide information regarding past employers and responsibilities.</h5>
+            <a href="business_hist.html" class="link_color"><h5>Click here to visit page.</h5></a>
+        </div>
+      </div>
+      <div class="index_divs">
+      	<div id="skills_img" class="bus_img_div">&nbsp;</div>
+        <div class="bus_txt_div">
+        	<h4>Employment Skills</h4>
+            <h5>This page will provide information regarding my greatest employment skills.</h5>
+            <a href="business_skills.html" class="link_color"><h5>Click here to visit page.</h5></a>
+        </div>
+      </div>
+      <div class="index_divs">
+      	<div id="projects_img" class="bus_img_div">&nbsp;</div>
+        <div class="bus_txt_div">
+       	  <h4>Business Projects</h4>
+            <h5>This page will provide information regarding projects I have done for employers or school projects.</h5>
+            <a href="business_projects.html" class="link_color"><h5>Click here to visit page.</h5></a>
+        </div>
+      </div>
+      <div class="index_divs">
+      	<div id="accolades_img" class="bus_img_div">&nbsp;</div>
+        <div class="bus_txt_div">
+        	<h4>Business Accolades</h4>
+            <h5>This page will provide information regarding accolades I have received from employers or through school involvement.</h5>
+            <a href="business_accolades.html" class="link_color"><h5>Click here to visit page.</h5></a>
+        </div>
+      </div>
+    </div>
+  </div>
 	<div class="business_push">&nbsp;</div>
     <footer class="business_foot">
+      <a href="shred_contact.html" id="footer_contact">Contact Info</a><br>
 	  <span class="glyphicon glyphicon-copyright-mark"></span> Copyright 2016 by Blake Hamm
 	</footer>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
@@ -29,5 +115,17 @@
 
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
 	<!-- Bootstrap JS URL-->
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+<script type="text/javascript">
+  	function menuFunction() {
+		document.getElementById("small_wrap_active").className = "small_wrap_active";
+		document.getElementById("small_wrap").className = "small_hide";
+	}
+	function menuxFunction() {
+		document.getElementById("small_wrap_active").className = "small_hide";
+		document.getElementById("small_wrap").className = "small_header_wrap";
+	}
+	</script>
   </body>
 </html>

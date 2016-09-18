@@ -178,7 +178,7 @@
 	padding: 3px 20px;
 	color: #777;
 	white-space: nowrap;
-	text-decoration: none;
+	text-decoration: underline;
 	font-variant: normal;
 	font-weight: bold;
 }
