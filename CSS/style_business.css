@@ -210,10 +210,17 @@
 	background-image:url(../web_images/business/blake6.jpg)
 	}
 #projects_img{
+<<<<<<< HEAD
 	background-image: url(../web_images/business/Blake10.jpg)
 	}
 #accolades_img{
 	background-image: url(../web_images/business/Blake8.jpg)
+=======
+	background-image:url(../web_images/business/blake8.jpg)
+	}
+#accolades_img{
+	background-image:url(../web_images/business/blake9.jpg)
+>>>>>>> origin/master
 	}
 
 #bus_index {
