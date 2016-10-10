@@ -52,62 +52,129 @@ a:active {
   </head>
   <body>
   <div class="background_img_">
-  	    	<div class="dropdown" id="bus_buttons">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-menu-hamburger"></span>&nbsp;
-    Menu
-  </button>
-  <ul class="dropdown-menu dropdown_box" id="dropdownMenu1_" role="menu">
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html" class="dropdown_txt">Home</a></li>
-              <li role="presentation" class="divider dropdown_txt"></li>
-              <li role="presentation" class="dropdown_txt dropdown_header">Business Portfolio</li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="business_hist.html" class="dropdown_txt">Employment History</a></li>
-              
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="business_skills.html" class="dropdown_txt">Employment Skills</a></li>
-              
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="business_projects.html" class="dropdown_txt">Business Projects</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="business_accolades.html" class="dropdown_txt">Business Accolades</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="business_contact.html" class="dropdown_txt">Contact</a></li>
-            </ul>
+  	    	<div id="header_wrap">
+	  <div class="header_left_wrap">
+	    <div class="header_logo_wrap"><img src="web_images/LogoF.jpg" alt="" width="250" height="250" class="header_logo_img"/></div>
+	    <div class="header_social_wrap"> <a href="https://www.instagram.com/breezy_hamm/" target="_blank" class="fa fa-instagram fa-lg social_color"></a> <a href="https://vimeo.com/blakejhamm" target="_blank" class="fa fa-vimeo-square fa-lg social_color"></a> <a href="https://www.linkedin.com/in/blakejhamm" target="_blank" class="fa fa-linkedin-square fa-lg social_color"></a> <a href="https://www.facebook.com/blake.hamm.7" target="_blank" class="fa fa-facebook-square fa-lg social_color"></a> </div>
+      </div>
+	  <div class="header_button_wrap">
+	    <div class="header_button_style"> <a href="index.html">
+	      <h4 class="header_button_txt header_button_active">Home</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="business_hist.html">
+	      <h4 class="header_button_txt">History</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="business_skills.html">
+	      <h4 class="header_button_txt">Skills</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="business_projects.html">
+	      <h4 class="header_button_txt">Projects</h4>
+	      </a></div>
+	    <div class="header_button_style"> <a href="business_accolades.html">
+	      <h4 class="header_button_txt">Accolades</h4>
+	      </a></div>
+      </div>
+	  <div class="header_contact_wrap"> <a href="business_contact.html" class="header_contact_link">
+	    <h4 class="header_contact_h header_button_txt">Contact</h4>
+	    </a></div>
+  </div>
+  <div id="small_wrap" class="small_header_wrap">
+<button type="button" class="small_header_button" id="small_header_button" onClick="menuFunction()">
+       	<span id="small_icon" class="glyphicon glyphicon-menu-hamburger"></span>&nbsp;Menu 
+		</button>
 </div>
+	<div class="small_hide" id="small_wrap_active">
+    <button type="button" class="small_header_button" id="small_header_button_active" onClick="menuxFunction()">
+    	<span id="small_icon_active" class="glyphicon glyphicon-remove"></span>&nbsp;Menu 
+		</button>
+      <div class="header_left_wrap">
+	      <div class="header_logo_wrap"><img src="web_images/LogoF.jpg" alt="" width="250" height="250" class="header_logo_img"/></div>
+        <div class="header_social_wrap"> <a href="https://www.instagram.com/breezy_hamm/" target="_blank" class="fa fa-instagram fa-lg social_color"></a> <a href="https://vimeo.com/blakejhamm" target="_blank" class="fa fa-vimeo-square fa-lg social_color"></a> <a href="https://www.linkedin.com/in/blakejhamm" target="_blank" class="fa fa-linkedin-square fa-lg social_color"></a> <a href="https://www.facebook.com/blake.hamm.7" target="_blank" class="fa fa-facebook-square fa-lg social_color"></a> </div>
+        </div>
+	    <div id="small_button_wrap">
+	      <div class="header_button_wrap">
+	        <div class="header_button_style"> <a href="index.html">
+	          <h4 class="header_button_txt header_button_active">Home</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="business_hist.html">
+	          <h4 class="header_button_txt">History</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="business_skills.html">
+	          <h4 class="header_button_txt">Skills</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="business_projects.html">
+	          <h4 class="header_button_txt">Projects</h4>
+	          </a></div>
+	        <div class="header_button_style"> <a href="business_accolades.html">
+	          <h4 class="header_button_txt">Accolades</h4>
+	          </a></div>
+          </div>
+	      <div class="header_contact_wrap"> <a href="business_contact.html" class="header_contact_link">
+	        <h4 class="header_button_txt header_contact_h">Contact</h4>
+	        </a></div>
+        </div>
+      </div>
     <div class="container-fluid business_body" id="bus_index">
       <div class="index_divs">
       	<div id="history_img" class="bus_img_div">&nbsp;</div>
         <div class="bus_txt_div">
         	<h4>Employment History</h4>
-            <h5>This page will provide information regarding past employers and responsibilities.</h5>
-            <a href="business_hist.html" class="link_color"><h5>Click here to visit page.</h5></a>
+            <ul class="bus_li">
+            	<li>Business Tutoring Center Coordinator</li>
+                <li>Corporate Sponsorship Intern</li>
+                <li>Youth Development Professional</li>
+                <li>Soccer Referee</li>
+                <li style="list-style-type:none;">&nbsp;</li>
+                <li><a href="business_hist.html" class="link_color">Click to view more.</a></li>
+            </ul>
         </div>
       </div>
       <div class="index_divs">
       	<div id="skills_img" class="bus_img_div">&nbsp;</div>
         <div class="bus_txt_div">
         	<h4>Employment Skills</h4>
-            <h5>This page will provide information regarding my greatest employment skills.</h5>
-            <a href="business_skills.html" class="link_color"><h5>Click here to visit page.</h5></a>
+            <ul class="bus_li">
+            	<li>Communication</li>
+                <li>Personal management</li>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+                <li>Leadership</li>
+                <li>Computer Profficiency</li>
+                <li style="list-style-type:none;">&nbsp;</li>
+                <li><a href="business_skills.html" class="link_color">Click to view more.</a></li>
+            </ul>
         </div>
       </div>
       <div class="index_divs">
       	<div id="projects_img" class="bus_img_div">&nbsp;</div>
         <div class="bus_txt_div">
        	  <h4>Business Projects</h4>
-            <h5>This page will provide information regarding projects I have done for employers or school projects.</h5>
-            <a href="business_projects.html" class="link_color"><h5>Click here to visit page.</h5></a>
+            <ul class="bus_li">
+            	<li>School Projects</li>
+                <li>Employment Projects</li>
+                <li style="list-style-type:none;">&nbsp;</li>
+                <li><a href="business_projects.html" class="link_color">Click to view more.</a></li>
+            </ul>
         </div>
       </div>
       <div class="index_divs">
       	<div id="accolades_img" class="bus_img_div">&nbsp;</div>
         <div class="bus_txt_div">
         	<h4>Business Accolades</h4>
-            <h5>This page will provide information regarding accolades I have received from employers or through school involvement.</h5>
-            <a href="business_accolades.html" class="link_color"><h5>Click here to visit page.</h5></a>
+           <ul class="bus_li">
+            	<li>Counselor of the Week</li>
+                <li>Volunteer of the month</li>
+                <li>Dean's list</li>
+                <li style="list-style-type:none;">&nbsp;</li>
+                <li><a href="business_hist.html" class="link_color">Click for more details.</a></li>
+            </ul>
         </div>
       </div>
     </div>
   </div>
 	<div class="business_push">&nbsp;</div>
     <footer class="business_foot">
-      <a href="shred_contact.html" id="footer_contact">Contact Info</a><br>
+      <a href="business_contact.html" id="footer_contact">Contact Info</a><br>
 	  <span class="glyphicon glyphicon-copyright-mark"></span> Copyright 2016 by Blake Hamm
 	</footer>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 

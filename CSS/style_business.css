@@ -210,14 +210,14 @@
 	background-image:url(../web_images/business/blake6.jpg)
 	}
 #projects_img{
-	background-image:url(../web_images/business/blake9.jpg)
+	background-image: url(../web_images/business/Blake10.jpg)
 	}
 #accolades_img{
-	background-image:url(../web_images/business/blake8.jpg)
+	background-image: url(../web_images/business/Blake8.jpg)
 	}
 
 #bus_index {
-	padding-top:10vh;
+	padding-top: 20vh;
 	}
 #bus_buttons{
 	display:flex;
@@ -282,4 +282,8 @@
 }
 .link_color {
 	color: #000000;
+}
+.bus_li {
+	list-style-type: square;
+
 }
