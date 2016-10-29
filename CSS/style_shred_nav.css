@@ -206,9 +206,8 @@
 	margin: 30px;
 	box-shadow: 0px 0px;
 }
-
-#giro {
-	background-image: url(../web_images/shred/Sponsors/giro.jpg);
+#ski_utah {
+	background-image: url(../web_images/shred/Sponsors/ski_utah.png);
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -373,6 +372,17 @@
 	padding-top: 20px;
 	font-size: 2vw;
 }
+#media_commentary {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.media_commentary {
+	width: 640px;
+
+}
+
+
 
 
 
