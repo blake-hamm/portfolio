@@ -118,9 +118,78 @@ a:active {
       <div class="container" id="main_body">
       	<h2 class="pro_title text-center">Business Projects</h2>
         <ul>
-        	<li>Economics and Law research paper on US transportation system found <a href="Research Paper Real.pdf" target="_blank" class="link_color">here.</a></li>
+            <li><h4>Westminster College-Wide Learning goals. (Click a goal for details)</h4>
+            	<ul>
+                	<li><button type="button" class="cwlg_button" id="goal_1" onClick="goal_1Function()">Critical, analytical, and integrative thinking.</button></li>
+                    <li><button type="button" class="cwlg_button" id="goal_2" onClick="goal_2Function()">Creative and reflective capabilities.</button></li>
+                    <li><button type="button" class="cwlg_button" id="goal_3" onClick="goal_3Function()">Leadership, collaboration, and teamwork.</button></li>
+                    <li><button type="button" class="cwlg_button" id="goal_4" onClick="goal_4Function()">Writing and other communication.</button></li>
+                    <li><button type="button" class="cwlg_button" id="goal_5" onClick="goal_5Function()">Global consciousness, social responsibility, and ethical awareness.</button></li>
+                </ul>
+            </li>
+        <div class="cwlg_pop" id="goal_1_">
+          <div class="cwlg_pop_top">
+            <h3>Critical, analytical and integrative thinking.</h3>
+          	<button type="button" onClick="goal_1xFunction()" class="fa fa-times fa-4x cwlg_pop_x" aria-hidden="true"></button>
+          </div>
+          <div>
+            <h4>Examples:</h4>
+            <ul>
+              <li>Business Quantitative Methods case study.&nbsp;<a href="cwlg/BQM Chp 10 Case 6.xlsx" target="_blank" class="cwlg_pop_link">Excel File.</a>&nbsp;<a href="cwlg/BQM Ch 10 Case 6 Memo.pdf" target="_blank" class="cwlg_pop_link">Memo File.</a></li>
+              <li>Management memo.&nbsp;<a href="cwlg/Memo.pdf" target="_blank" class="cwlg_pop_link">Memo File.</a></li>
+            </ul>
+          </div>
+          </div>
+          <div class="cwlg_pop" id="goal_2_">
+          <div class="cwlg_pop_top">
+            <h3>Creative and reflective capabilities.</h3>
+          	<button type="button" onClick="goal_2xFunction()" class="fa fa-times fa-4x cwlg_pop_x" aria-hidden="true"></button>
+          </div>
+          <div>
+            <h4>Examples:</h4>
+            <ul>
+              <li>Economics and Law research paper on US transportation system found <a href="Research Paper Real.pdf" target="_blank" class="link_color">here.</a></li>
+              <li>Business Finance stock analysis and reflection.&nbsp;<a href="cwlg/Lab1.pdf" target="_blank" class="link_color">Written Reflection.</a>&nbsp;<a href="cwlg/Lab.xlsx" target="_blank" class="link_color">Excel File.</a></li>
+            </ul>
+          </div>
+          </div>
+          <div class="cwlg_pop" id="goal_3_">
+          <div class="cwlg_pop_top">
+            <h3>Leadership, collaboration, and teamwork.</h3>
+          	<button type="button" onClick="goal_3xFunction()" class="fa fa-times fa-4x cwlg_pop_x" aria-hidden="true"></button>
+          </div>
+          <div>
+            <h4>Examples:</h4>
+            <ul>
+              <li>Group statistics project found <a href="cwlg/Final Project_Written Report_Rough Draft-2.pdf" target="_blank" class="link_color">here.</a></li>
+            </ul>
+          </div>
+          </div>
+          <div class="cwlg_pop" id="goal_4_">
+          <div class="cwlg_pop_top">
+            <h3>Writing and other communication.</h3>
+          	<button type="button" onClick="goal_4xFunction()" class="fa fa-times fa-4x cwlg_pop_x" aria-hidden="true"></button>
+          </div>
+          <div>
+            <h4>Examples:</h4>
+            <ul>
+              <li>Macro Economic Theory research paper on the US Government's role in the Great Recession of 2008 found <a href="cwlg/Macro Term Paper Draft 2.pdf" target="_blank" class="link_color">here.</a></li>
+            </ul>
+          </div>
+          </div>
+          <div class="cwlg_pop" id="goal_5_">
+          <div class="cwlg_pop_top">
+            <h3>Global consciousness, social responsibility, and ethical awareness.</h3>
+          	<button type="button" onClick="goal_5xFunction()" class="fa fa-times fa-4x cwlg_pop_x" aria-hidden="true"></button>
+          </div>
+          <div>
+            <h4>Examples:</h4>
+            <ul>
+              <li>Observations of the French Social Welfare system found <a href="cwlg/europe_social_welfare.pdf" target="_blank" class="link_color">here.</a></li>
+            </ul>
+          </div>
+          </div>
         </ul>
-        <h5 class="text-center">*More projects will be posted soon. The above project provides an example of what may be posted.</h5>
       </div>
     </div>
   </div>
@@ -143,6 +212,36 @@ a:active {
 		document.getElementById("small_wrap_active").className = "small_hide";
 		document.getElementById("small_wrap").className = "small_header_wrap";
 	}
+	function goal_1Function() {
+		document.getElementById("goal_1_").className = "cwlg_pop_active";
+	}
+	function goal_1xFunction() {
+		document.getElementById("goal_1_").className = "cwlg_pop";
+		}
+	function goal_2Function() {
+		document.getElementById("goal_2_").className = "cwlg_pop_active";
+	}
+	function goal_2xFunction() {
+		document.getElementById("goal_2_").className = "cwlg_pop";
+		}
+	function goal_3Function() {
+		document.getElementById("goal_3_").className = "cwlg_pop_active";
+	}
+	function goal_3xFunction() {
+		document.getElementById("goal_3_").className = "cwlg_pop";
+		}
+	function goal_4Function() {
+		document.getElementById("goal_4_").className = "cwlg_pop_active";
+	}
+	function goal_4xFunction() {
+		document.getElementById("goal_4_").className = "cwlg_pop";
+		}
+	function goal_5Function() {
+		document.getElementById("goal_5_").className = "cwlg_pop_active";
+	}
+	function goal_5xFunction() {
+		document.getElementById("goal_5_").className = "cwlg_pop";
+		}
 	</script>
   </body>
 </html>
